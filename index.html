@@ -361,9 +361,9 @@
     text-align:center;
   }
 
-  /* --- ADDED CSS ONLY --- */
+  /* --- ADDED FEATURES BELOW --- */
 
-  /* 1. PINK TO WHITE TEXT GRADIENT CLASS */
+  /* Pink to White Gradient Class */
   .pink-grad {
     background: linear-gradient(135deg, #E17FA8 0%, #FFFFFF 100%);
     -webkit-background-clip: text;
@@ -371,7 +371,7 @@
     display: inline-block;
   }
 
-  /* 2. DARK MODE THEME OVERRIDES (DEFAULT ON JOIN) */
+  /* Dark Mode Colors */
   body.dark-mode {
     --bg: #18121E;
     --panel: #241B2D;
@@ -385,13 +385,8 @@
   body.dark-mode nav {
     background: rgba(24, 18, 30, 0.9);
   }
-  body.dark-mode .pink-grad {
-    background: linear-gradient(135deg, #9D65FF 0%, #FFFFFF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 
-  /* 3. LIGHT/DARK TOGGLE BUTTON */
+  /* Dark/Light Toggle Button */
   .theme-toggle {
     background: var(--panel);
     border: 1.5px solid var(--line);
@@ -421,7 +416,7 @@
   body:not(.dark-mode) .moon-icon { display: none; }
 </style>
 </head>
-<body class="dark-mode">
+<body>
 
 <div class="blob" style="width:260px;height:260px; top:-60px; left:5%; background:var(--accent);"></div>
 <div class="blob" style="width:200px;height:200px; top:180px; right:5%; background:var(--accent-deep); animation-delay:3s;"></div>
@@ -472,12 +467,11 @@
 
 <section id="experience">
   <div class="wrap section-panel">
-    <span class="eyebrow">Track record</span>
     <h2>Experience</h2>
 
     <div class="org-grid">
       <a class="org-card" href="https://www.roblox.com/communities/13874159/RoMart-Corporation#!/about" target="_blank" rel="noopener">
-        <img src="data:image/png;base64,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" alt="RoMart Corporation">
+        <img src="data:image/png;base64,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" alt="RoMart Corporation">
         <h3>RoMart Corporation</h3>
         <span class="duration">1.5+ Years</span>
         <div class="role-group">
@@ -535,7 +529,6 @@
 </footer>
 
 <script>
-  // TOGGLE SCRIPT FOR LIGHT / DARK MODE
   const toggleBtn = document.getElementById('themeToggle');
   toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
