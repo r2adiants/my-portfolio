@@ -626,3 +626,29 @@
 
 </body>
 </html>
+
+-----
+
+/* smooth floating entrance for panels */
+.section-panel,
+.closing-panel,
+.org-card,
+.why-card {
+ animation: floatIn 0.9s ease both;
+}
+
+@keyframes floatIn {
+ from {
+ opacity: 0;
+ transform: translateY(18px) scale(0.98);
+ }
+ to {
+ opacity: 1;
+ transform: translateY(0) scale(1);
+ }
+}
+
+/* delayed stagger effect */
+.org-card:nth-child(1) { animation-delay: 0.05s; }
+.org-card:nth-child
+
